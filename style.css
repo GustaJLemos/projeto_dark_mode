@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* :hover{
+   da pra colcoar as cores aq, porém os estilos das cores q tu colocar aq, fica sumindo quando vc sai da página
+} */
+
+html{
+    --white: #FFFFFF; 
+    --black: #000000;
+    --purple: #BD00FF;
+    --blue: #DEDFFF;
+
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 6.1rem 1fr;
+    grid-template-areas: 'header header' 'left right';
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    grid-area: header;
+    background: url(images/bg-header.svg);
+}
+
+a{
+   color: var(--white);
+   font-size: 2.4rem;
+   /* font-weight: 500;  */
+   /* line-height: 0; */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* width: 114.6rem; */
+    justify-content: space-around;
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+.navbar a:nth-child(6){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a:nth-child(6) > p{
+    margin-right: 1.2rem;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    background-color: var(--blue);
+    /* padding: 16.7rem 0 0 12.7rem; */
+}
+
+main{
+    grid-area: left;
+}
+
+.apresentation{
+    font-size: 3.6rem;
+    margin-bottom: 4.9rem;
+}
+
+.apresentation p:nth-child(1){
+    font-weight: 700;
+}
+
+.apresentation .text-purple{
+    color: var(--purple);
+}
+
+.text p{
+    font-size: 2.4rem;
+    width: 61rem;
+    margin-bottom: 2.4rem;
+}
+
+.text .button{
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple);
+    transition: filter .2s;
+    cursor: pointer;
+    /* padding: 1.8rem 5rem; */
+    height: 7rem;
+    width: 22.3rem;
+    border-radius: 2rem;
+    /* margin-left: 31.8rem; */
+}
+
+.text .button:hover{
+    filter: brightness(1.2);
+}
+
+#bg{
+    color: white;
+    grid-area: right;
+    background: black;
+    width: 100px;
+    height: 100px;
+}
