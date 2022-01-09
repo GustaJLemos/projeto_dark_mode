@@ -23,11 +23,15 @@ html{
 
 .content{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 6.1rem 1fr;
     grid-template-areas: 'header header' 'left right';
     width: 100vw;
     height: 100vh;
+    /* tirando a barra de rolagem horizontal */
+    /* ñ consegui achar outra forma a ñ ser essa */
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 header{
@@ -37,10 +41,10 @@ header{
 }
 
 a{
-   color: var(--white);
-   font-size: 2.4rem;
-   /* font-weight: 500;  */
-   /* line-height: 0; */
+    color: var(--white);
+    font-size: 2.4rem;
+    /* font-weight: 500;  */
+    /* line-height: 0; */
 }
 
 .navbar{
@@ -61,16 +65,17 @@ a{
     margin-right: 1.2rem;
 }
 
-.container{
-    height: 100%;
-    width: 100vw;
-    background-color: var(--blue);
-    /* padding: 16.7rem 0 0 12.7rem; */
-}
-
 main{
     grid-area: left;
 }
+
+.container{
+    height: 72rem;
+    width: 100vw;
+    background-color: var(--blue);
+    padding: 16.7rem 0 0 12.7rem;
+}
+
 
 .apresentation{
     font-size: 3.6rem;
@@ -113,7 +118,13 @@ main{
 #bg{
     color: white;
     grid-area: right;
-    background: black;
-    width: 100px;
-    height: 100px;
+    background: url(images/bg-light-mode.svg) no-repeat;
+    /* width: 100px;
+    height: 100px; */
 }
+
+.dark-mode{
+   color: var(--white); 
+   background: url(images/bg-dark-mode.svg);
+}
+ 
