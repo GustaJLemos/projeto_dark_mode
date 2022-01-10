@@ -11,7 +11,10 @@ Tenho o intuito de evoluir esse projeto no futuro, adicionando mais funcionalida
       html
       css
       JavaScript
-      
+         
+<h2>Layout</h2>
+O layout pode ser encontrado nesse link do <a href="https://www.figma.com/file/KHX4dXie4yd4A7dVGHEDH7/projeto_dark_mode?node-id=0%3A1">figma.</a>
+<hr>
 Muito obrigado por ler até aqui! 
 <br>
 Gusta Mendes.      
